@@ -1,6 +1,6 @@
 def sum_seq(sequence):
 	if isinstance(sequence, (list, tuple)):
-		return sum(map(sum_seq,sequence))
+		return sum(map(sum_seq, sequence))
 	else:
 		return sequence
 
