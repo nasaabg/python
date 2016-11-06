@@ -1,3 +1,5 @@
+#Jan Kurzydlo
+
 def flatten_sequence(sequence):
 	for el in sequence:
 		if isinstance(el,(list, tuple)):

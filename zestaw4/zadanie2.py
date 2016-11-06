@@ -1,3 +1,4 @@
+#Jan Kurzydlo
 
 def ruler(length):
     lines = ("|" + ("....|" * length))

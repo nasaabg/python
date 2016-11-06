@@ -1,3 +1,5 @@
+#Jan Kurzydlo
+
 def sum_seq(sequence):
 	if isinstance(sequence, (list, tuple)):
 		return sum(map(sum_seq, sequence))
