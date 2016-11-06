@@ -12,6 +12,14 @@ def swap_n_elements(L,left,right):
 	return L
 
 
+def swap_n_elements_recusrion(L,left,right):
+    if left <= right:
+        swap(L, left, right)
+        L = swap_n_elements_recusrion(L,left+1,right-1)
+    else:
+        return L
+    return L
+
 
 print([1,2,3,4,5,6])
-print(swap_n_elements([1,2,3,4,5,6],2,5))
+print(swap_n_elements_recusrion([1,2,3,4,5,6],2,5))
