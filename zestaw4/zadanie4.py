@@ -1,9 +1,7 @@
 def fibonacci(n):
-	x, y, z = [0, 0, 1]
-	for i in range(n-1):
-		x = y
-		y = z
-		z = x + y
-	return z
+    if n < 2:
+        return n
+    return fibonacci(n-2) + fibonacci(n-1)
 
-print(fibonacci(8))
+for i in range(10):
+    print(str(fibonacci(i)) + " " + str(i) )
